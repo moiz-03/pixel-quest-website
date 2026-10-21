@@ -742,3 +742,10 @@
 .page-end  { margin-top: var(--space-8); }
 .page-end--sm { margin-top: var(--space-7); }
 .notice--spaced { margin-top: var(--space-5); }
+
+/* --- Utility for centered CTA --- */
+.cta-center {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-7);
+}
