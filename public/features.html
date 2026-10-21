@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — Pixel Quest</title>
+  <meta name="description" content="Deep dive on Pixel Quest: quests, XP and levels, streaks, streak freezes, reminders, and the offline-first engine. Plus the full XP curve and tier table.">
+  <link rel="canonical" href="https://device-streaming-352fb58f.web.app/features">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="/assets/fonts/PressStart2P-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/assets/css/tokens.css?v=2">
+  <link rel="stylesheet" href="/assets/css/base.css?v=2">
+  <link rel="stylesheet" href="/assets/css/layout.css?v=2">
+  <link rel="stylesheet" href="/assets/css/components.css?v=2">
+  <script src="/assets/js/head.js"></script>
+  <script type="module" src="/assets/js/main.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pixel Quest">
+  <meta property="og:title" content="Features — Pixel Quest">
+  <meta property="og:description" content="Deep dive on quests, XP, streaks, freezes, reminders, and the offline-first engine.">
+  <meta property="og:url" content="https://device-streaming-352fb58f.web.app/features">
+  <meta property="og:image" content="https://device-streaming-352fb58f.web.app/assets/img/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Features — Pixel Quest">
+  <meta name="twitter:description" content="Deep dive on quests, XP, streaks, freezes, reminders, and the offline-first engine.">
+  <meta name="twitter:image" content="https://device-streaming-352fb58f.web.app/assets/img/og-preview.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a href="/" class="nav-logo" aria-label="Pixel Quest home">
+          <img src="/assets/img/logo.svg" alt="" width="28" height="28">
+          <span>Pixel Quest</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="/#features" aria-current="page">What you can track</a></li>
+          <li><a href="/download">Download</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="https://github.com/pixel-quest/pixel-quest" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">What you can track</h1>
+        <p class="page-meta">The full feature surface — every mechanic in the app, explained.</p>
+
+        <article class="feature-detail" id="quests">
+          <div class="feature-detail__meta">
+            <svg class="feature-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16"/>
+              <polyline points="8,12 11,15 16,9"/>
+            </svg>
+            <h2 class="feature-detail__title">Quests</h2>
+          </div>
+          <div class="feature-detail__body">
+            <p>A quest is anything you want to do every day. "Morning run", "Read ten pages", "No sugar". Give it a title, a category, and an XP value between 5 and 100 — then check it off each day you do it.</p>
+            <p>Quests are yours alone. Nothing is shared, ranked, or compared against other users. The point is consistency, not competition.</p>
+          </div>
+        </article>
+
+        <article class="feature-detail" id="xp">
+          <div class="feature-detail__meta">
+            <svg class="feature-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polygon points="12,3 15,9 21,9 16,13 18,20 12,16 6,20 8,13 3,9 9,9"/>
+            </svg>
+            <h2 class="feature-detail__title">XP &amp; Levels</h2>
+          </div>
+          <div class="feature-detail__body">
+            <p>Every completion earns XP. Earn enough and you level up. The curve widens as you go: level 0 → 1 costs 100 XP, level 1 → 2 costs 150, level 2 → 3 costs 200, and so on. Formula: <strong>XP to next level = 100 + 50 × current level</strong>.</p>
+            <p>XP is also spendable — 500 XP buys a streak freeze — so your total and available balances are tracked separately.</p>
+          </div>
+        </article>
+
+        <article class="feature-detail" id="streaks">
+          <div class="feature-detail__meta">
+            <svg class="feature-detail__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2 C14 6 18 8 18 13 A6 6 0 0 1 6 13 C6 10 8 8 9 6 C10 8 11 9 12 10 C12 7 12 4 12 2 Z"/>
+            </svg>
+            <h2 class="feature-detail__title">Streaks</h2>
+          </div>
+          <div class="feature-detail__body">
+            <p>There are two streak concepts. A <strong>global streak</strong> bumps the first time you complete any quest on a given day. A <strong>per-quest streak</strong> counts consecutive days for that specific quest. Neither is required — you can use Pixel Quest as a plain checklist.</p>
+            <p>The global streak is the one that shows on the dashboard. Miss a day and it resets to zero — unless you spend a freeze.</p>
+          </div>
+        </article>
+
+        <article class="feature-detail" id="freezes">
+          <div class="feature-detail__meta">
+            <svg class="feature-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+              <line x1="12" y1="2" x2="12" y2="22"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <line x1="5" y1="5" x2="19" y2="19"/>
+              <line x1="19" y1="5" x2="5" y2="19"/>
+            </svg>
+            <h2 class="feature-detail__title">Streak Freezes</h2>
+          </div>
+          <div class="feature-detail__body">
+            <p>A streak freeze protects your global streak from <em>one</em> missed day. If you miss yesterday and own at least one freeze, it's consumed automatically on the next cold start — the streak survives. Miss two days in a row and the freeze can't save you.</p>
+            <p>Price: 500 XP. Maximum owned at once: 2.</p>
+          </div>
+        </article>
+
+        <article class="feature-detail" id="reminders">
+          <div class="feature-detail__meta">
+            <svg class="feature-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 16 V10 A6 6 0 0 1 18 10 V16 L20 19 H4 Z"/>
+              <path d="M10 21 H14"/>
+            </svg>
+            <h2 class="feature-detail__title">Reminders</h2>
+          </div>
+          <div class="feature-detail__body">
+            <p>Each quest can carry its own daily reminder time. Notifications are scheduled locally — no server, no push service, no third party. If you delete the quest, the reminder goes with it.</p>
+          </div>
+        </article>
+
+        <article class="feature-detail" id="offline">
+          <div class="feature-detail__meta">
+            <svg class="feature-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+              <path d="M3 3 L21 21"/>
+              <path d="M8 18 H17 A4 4 0 0 0 17 10"/>
+              <path d="M6 10 A4 4 0 0 1 9 6"/>
+            </svg>
+            <h2 class="feature-detail__title">Offline-first</h2>
+          </div>
+          <div class="feature-detail__body">
+            <p>The app is offline-first: every quest, XP total, and streak value is mirrored locally before it touches the network. Add a quest on the subway — it syncs when you're back online.</p>
+            <p>Your data is mirrored on your device first, so the app keeps working with no signal. Your account syncs it to Firebase when you are back online.</p>
+          </div>
+        </article>
+
+        <h2 class="section-title">XP curve</h2>
+        <p class="page-meta">Cumulative XP to reach each level from zero.</p>
+        <div class="table-scroll">
+          <table class="data-table">
+            <caption>XP to reach level L from zero</caption>
+            <thead>
+              <tr><th scope="col">Level</th><th scope="col">XP to reach</th><th scope="col">XP for this level</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">0</td><td class="num">0</td><td class="num">100</td></tr>
+              <tr><td class="num">1</td><td class="num">100</td><td class="num">150</td></tr>
+              <tr><td class="num">2</td><td class="num">250</td><td class="num">200</td></tr>
+              <tr><td class="num">3</td><td class="num">450</td><td class="num">250</td></tr>
+              <tr><td class="num">5</td><td class="num">1,000</td><td class="num">350</td></tr>
+              <tr><td class="num">10</td><td class="num">3,250</td><td class="num">600</td></tr>
+              <tr><td class="num">25</td><td class="num">17,500</td><td class="num">1,350</td></tr>
+              <tr><td class="num">50</td><td class="num">66,250</td><td class="num">2,600</td></tr>
+              <tr><td class="num">100</td><td class="num">257,500</td><td class="num">5,100</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="page-note">One 10-XP quest completed every day for a year → ~3,650 XP → about level 20.</p>
+
+        <h2 class="section-title">Tiers</h2>
+        <p class="page-meta">Seven ranks, mapped to level ranges.</p>
+        <div class="table-scroll">
+          <table class="data-table">
+            <caption>Level → tier mapping</caption>
+            <thead>
+              <tr><th scope="col">Tier</th><th scope="col">Levels</th><th scope="col">Flavor</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Novice</strong></td><td class="num">0–4</td><td>Every legend starts somewhere.</td></tr>
+              <tr><td><strong>Squire</strong></td><td class="num">5–14</td><td>Your training begins.</td></tr>
+              <tr><td><strong>Knight</strong></td><td class="num">15–29</td><td>Steel yourself for what's ahead.</td></tr>
+              <tr><td><strong>Champion</strong></td><td class="num">30–49</td><td>The crowd roars your name.</td></tr>
+              <tr><td><strong>Hero</strong></td><td class="num">50–74</td><td>Legends are written by heroes.</td></tr>
+              <tr><td><strong>Legend</strong></td><td class="num">75–99</td><td>Your name echoes through ages.</td></tr>
+              <tr><td><strong>Mythic</strong></td><td class="num">100+</td><td>You have transcended mortality.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="section-title">Categories</h2>
+        <p class="page-meta">Four buckets for your quests. Purely organisational.</p>
+        <div class="categories">
+          <div class="category category--health">
+            <span class="category__dot" aria-hidden="true"></span>
+            <span class="category__name">Health</span>
+          </div>
+          <div class="category category--fitness">
+            <span class="category__dot" aria-hidden="true"></span>
+            <span class="category__name">Fitness</span>
+          </div>
+          <div class="category category--self">
+            <span class="category__dot" aria-hidden="true"></span>
+            <span class="category__name">Self-improvement</span>
+          </div>
+          <div class="category category--skills">
+            <span class="category__dot" aria-hidden="true"></span>
+            <span class="category__name">Skills</span>
+          </div>
+        </div>
+
+        <p class="page-end">
+          <a class="btn btn-secondary" href="/download">Download the APK</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="/assets/img/logo.svg" alt="" width="24" height="24">
+            <span>Pixel Quest</span>
+          </a>
+          <p class="footer-tagline">Small habits, big adventures.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/changelog">Changelog</a></li>
+            <li><a href="https://github.com/pixel-quest/pixel-quest" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="mailto:hello@pixelquest.app">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Pixel Quest. No cookies, no tracking, no nonsense.</p>
+    </div>
+  </footer>
+</body>
+</html>

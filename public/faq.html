@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ: Free, Offline, Data & APK Install — Pixel Quest</title>
+  <meta name="description" content="Answers to common questions about Pixel Quest: cost, accounts, offline behaviour, where data lives, how to delete your account, and how to install an APK on Android.">
+  <link rel="canonical" href="https://device-streaming-352fb58f.web.app/faq">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="/assets/fonts/PressStart2P-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/assets/css/tokens.css?v=2">
+  <link rel="stylesheet" href="/assets/css/base.css?v=2">
+  <link rel="stylesheet" href="/assets/css/layout.css?v=2">
+  <link rel="stylesheet" href="/assets/css/components.css?v=2">
+  <script src="/assets/js/head.js"></script>
+  <script type="module" src="/assets/js/main.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pixel Quest">
+  <meta property="og:title" content="FAQ: Free, Offline, Data & APK Install — Pixel Quest">
+  <meta property="og:description" content="Cost, accounts, offline behaviour, data, deletion, and APK installation.">
+  <meta property="og:url" content="https://device-streaming-352fb58f.web.app/faq">
+  <meta property="og:image" content="https://device-streaming-352fb58f.web.app/assets/img/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ: Free, Offline, Data & APK Install — Pixel Quest">
+  <meta name="twitter:description" content="Cost, accounts, offline behaviour, data, deletion, and APK installation.">
+  <meta name="twitter:image" content="https://device-streaming-352fb58f.web.app/assets/img/og-preview.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Pixel Quest free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pixel Quest is free with no ads, no in-app purchases, and no premium tier." } },
+      { "@type": "Question", "name": "Does it need an account?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You create a free account (email and password) when you first open the app. Your quests are also kept on your device, so the app keeps working offline." } },
+      { "@type": "Question", "name": "Does it work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pixel Quest is offline-first. Quests, XP, and streaks work with no network connection and sync when you're back online." } },
+      { "@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": { "@type": "Answer", "text": "On your device (in unencrypted app preferences) and, because the app requires an account, in your private Firestore document, readable only by your signed-in user." } },
+      { "@type": "Question", "name": "How do I delete my account?", "acceptedAnswer": { "@type": "Answer", "text": "Open the app, go to Settings, tap Delete account, and confirm your password. Your Firestore data and auth record are removed immediately." } },
+      { "@type": "Question", "name": "Why isn't it on the Play Store yet?", "acceptedAnswer": { "@type": "Answer", "text": "Pixel Quest is in early access. The APK is published directly on this site until the store listing goes live." } },
+      { "@type": "Question", "name": "How do I install an APK?", "acceptedAnswer": { "@type": "Answer", "text": "Download the APK, enable installs from your browser in Android settings, then tap the file and confirm. Full instructions are on the download page." } },
+      { "@type": "Question", "name": "Is my data sent anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, to Firebase (Google) only: your account email, display name, quests, XP and streak data. No analytics, no ads, no other third party. This website collects nothing." } },
+      { "@type": "Question", "name": "What is a streak freeze?", "acceptedAnswer": { "@type": "Answer", "text": "A streak freeze protects your global streak from one missed day. It costs 500 XP and you can own at most two at a time." } },
+      { "@type": "Question", "name": "What happens if I miss a day?", "acceptedAnswer": { "@type": "Answer", "text": "Your global streak resets to zero — unless you have a streak freeze, in which case it is consumed automatically and the streak survives." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a href="/" class="nav-logo" aria-label="Pixel Quest home">
+          <img src="/assets/img/logo.svg" alt="" width="28" height="28">
+          <span>Pixel Quest</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="/features">What you can track</a></li>
+          <li><a href="/download">Download</a></li>
+          <li><a href="/faq" aria-current="page">FAQ</a></li>
+          <li><a href="https://github.com/pixel-quest/pixel-quest" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Frequently asked questions</h1>
+        <p class="page-meta">Short answers to the questions we get most.</p>
+
+        <div class="faq-accordion">
+
+          <details open id="free">
+            <summary>Is Pixel Quest free?</summary>
+            <p>Yes. Free with no ads, no in-app purchases, no premium tier, and no upsell of any kind. The app is the whole product.</p>
+          </details>
+
+          <details open id="account">
+            <summary>Does it need an account?</summary>
+            <p>Yes. You create a free account (email and password) when you first open the app. Your quests are also kept on your device, so the app keeps working offline.</p>
+          </details>
+
+          <details open id="offline">
+            <summary>Does it work offline?</summary>
+            <p>Yes. Pixel Quest is offline-first. Quests, XP, and streaks all work with no network connection. Changes sync the next time you're online.</p>
+          </details>
+
+          <details open>
+            <summary>Where is my data stored?</summary>
+            <p>On your device (in unencrypted app preferences) and, because the app requires an account, in your private Firestore document, readable only by your signed-in user.</p>
+          </details>
+
+          <details open>
+            <summary>How do I delete my account?</summary>
+            <p>Open the app, go to Settings, tap <strong>Delete account</strong>, and confirm your password. Your Firestore data and auth record are removed immediately. This cannot be undone.</p>
+          </details>
+
+          <details open>
+            <summary>Why isn't it on the Play Store yet?</summary>
+            <p>Pixel Quest is in early access. The APK is published directly on this site until the Play Store listing goes live. Updates are posted to the <a href="/changelog">changelog</a>.</p>
+          </details>
+
+          <details open>
+            <summary>How do I install an APK?</summary>
+            <p>Download the file, allow your browser to install unknown apps in Android settings, then tap the downloaded file. Step-by-step instructions, including troubleshooting, are on the <a href="/download">download page</a>.</p>
+          </details>
+
+          <details open>
+            <summary>Is my data sent anywhere?</summary>
+            <p>Yes, to Firebase (Google) only: your account email, display name, quests, XP and streak data. No analytics, no ads, no other third party. This website collects nothing.</p>
+          </details>
+
+          <details open>
+            <summary>What is a streak freeze?</summary>
+            <p>A streak freeze protects your global streak from <strong>one</strong> missed day. It costs 500 XP and you can own at most two at once. It is consumed automatically on the next cold start after you miss a day.</p>
+          </details>
+
+          <details open>
+            <summary>What happens if I miss a day?</summary>
+            <p>Your global streak resets to zero — unless you own a streak freeze, in which case it is consumed and the streak survives. Two missed days in a row reset the streak even if you have freezes.</p>
+          </details>
+
+        </div>
+
+        <p class="page-end">
+          Something not answered here? Email
+          <a href="mailto:hello@pixelquest.app">hello@pixelquest.app</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="/assets/img/logo.svg" alt="" width="24" height="24">
+            <span>Pixel Quest</span>
+          </a>
+          <p class="footer-tagline">Small habits, big adventures.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/changelog">Changelog</a></li>
+            <li><a href="https://github.com/pixel-quest/pixel-quest" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="mailto:hello@pixelquest.app">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Pixel Quest. No cookies, no tracking, no nonsense.</p>
+    </div>
+  </footer>
+</body>
+</html>
