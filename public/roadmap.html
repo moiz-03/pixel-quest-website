@@ -18,7 +18,31 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <!-- NAV GOES HERE -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a href="/" class="nav-logo" aria-label="Pixel Quest home">
+          <img src="/assets/img/logo.svg" alt="" width="28" height="28">
+          <span>Pixel Quest</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="/features">What you can track</a></li>
+          <li><a href="/download">Download</a></li>
+          <li><a href="/roadmap">Roadmap</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="https://github.com/pixel-quest/pixel-quest" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main id="main">
     <section class="section">
       <div class="container">
@@ -50,6 +74,30 @@
       </div>
     </section>
   </main>
-  <!-- FOOTER GOES HERE -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="/assets/img/logo.svg" alt="" width="24" height="24">
+            <span>Pixel Quest</span>
+          </a>
+          <p class="footer-tagline">Small habits, big adventures.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="/roadmap">Roadmap</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/changelog">Changelog</a></li>
+            <li><a href="https://github.com/pixel-quest/pixel-quest" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://github.com/moiz-03/pixel-quest-website/issues" target="_blank" rel="noopener noreferrer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Pixel Quest. No cookies, no tracking, no nonsense. Built by <a href="https://github.com/moiz-03" target="_blank" rel="noopener noreferrer">Moiz</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
