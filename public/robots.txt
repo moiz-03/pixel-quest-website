@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/downloads/
 
-Sitemap: https://pixelquest.app/sitemap.xml
+Sitemap: https://device-streaming-352fb58f.web.app/sitemap.xml
