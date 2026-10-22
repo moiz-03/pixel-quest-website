@@ -1,0 +1,122 @@
+/* ==========================================================================
+   layout.css — container, sections, grid, section headers.
+   Section vertical paddings are deliberately non-uniform (see DESIGN.md §3).
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.section {
+  padding-block: var(--space-8);
+}
+
+/* --- Section padding modifiers (DESIGN.md §3) ----------------------------
+   Mobile baseline is .section's 64px for every section. Desktop values are
+   non-uniform per spec; the largest gap is at the APK CTA.
+   .section--look-inside intentionally has no mobile rule — it inherits
+   the .section default of 64px on small viewports. */
+@media (min-width: 768px) {
+  .section--features     { padding-block: var(--space-9); }   /* 96px  */
+  .section--look-inside  { padding-block: var(--space-8); }   /* 64px  */
+  .section--how          { padding-block: 80px; }
+  .section--tiers        { padding-block: var(--space-9); }   /* 96px  */
+  .section--apk          { padding-block: 128px; }            /* largest — conversion point */
+  .section--faq          { padding-block: 80px; }
+}
+
+/* Section header: concrete noun phrase + mint tick. */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.section-header__title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 1.5px;
+  color: var(--ink-fg);
+  margin: 0;
+}
+.section-header__title::before {
+  content: "▸ " / ""; /* The / "" hides it from screen readers */
+  color: var(--mint);
+}
+.section-header__lede {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-fg2);
+  max-width: 56ch;
+}
+
+@media (min-width: 768px) {
+  .section-header__title { font-size: 18px; letter-spacing: 2px; }
+}
+
+/* --- Grids --------------------------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+@media (min-width: 768px) {
+  .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .grid--6 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--6 { grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+}
+
+/* --- Prose (legal pages, FAQ answers) ------------------------------------ */
+.prose {
+  max-width: 68ch;
+}
+.prose > * + * { margin-top: var(--space-4); }
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--ink-fg);
+  margin-top: var(--space-7);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--ink-3);
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--mint);
+  margin-top: var(--space-5);
+}
+.prose p, .prose li {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink-fg2);
+}
+.prose strong { color: var(--ink-fg); }
+.prose ul, .prose ol { padding-left: var(--space-5); }
+.prose li + li { margin-top: var(--space-2); }
+.prose a { color: var(--mint); }
+
+/* Page title on legal pages may center only the h1. */
+.page-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--ink-fg);
+  margin: var(--space-7) 0 var(--space-2);
+}
+.page-meta {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink-fg2);
+  margin-bottom: var(--space-6);
+}

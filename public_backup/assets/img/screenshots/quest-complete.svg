@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 780" width="360" height="780">
+  <style>
+    .bg { fill: #0B0F1A; } .card { fill: #131A33; stroke: #25324F; }
+    .ink { fill: #FFFFFF; } .muted { fill: #8FA3BF; } .dim { fill: #5C6E8C; }
+    .mint { fill: #00E5A0; } .gold { fill: #FFC542; } .track { fill: #1E2A45; }
+    .t { font-family: ui-monospace, monospace; }
+    .pt { font-family: ui-monospace, monospace; letter-spacing: 1px; }
+  </style>
+  <rect class="bg" width="360" height="780"/>
+  <rect class="card" x="20" y="56" width="320" height="108" rx="10"/>
+  <text class="pt mint" x="36" y="86" font-size="10">LEVEL 3</text>
+  <text class="pt muted" x="36" y="108" font-size="9">SQUIRE</text>
+  <rect class="track" x="36" y="122" width="288" height="10" rx="3"/>
+  <rect class="mint" x="36" y="122" width="216" height="10" rx="3"/>
+  <text class="t dim" x="36" y="152" font-size="10">275 / 400 XP</text>
+  <!-- toast overlay -->
+  <rect x="36" y="300" width="288" height="176" rx="12" fill="#131A33" stroke="#00E5A0" stroke-width="2"/>
+  <circle cx="180" cy="352" r="28" fill="#00E5A0"/>
+  <path d="M168 352 l9 9 l16 -18" stroke="#0B0F1A" stroke-width="5" fill="none" stroke-linecap="square"/>
+  <text class="pt ink" x="180" y="412" font-size="13" text-anchor="middle">QUEST COMPLETE</text>
+  <text class="pt gold" x="180" y="440" font-size="18" text-anchor="middle">+25 XP</text>
+  <text class="t muted" x="180" y="462" font-size="11" text-anchor="middle">STREAK · 13 DAYS</text>
+  <!-- faded list behind -->
+  <text class="pt dim" x="20" y="640" font-size="9">TODAY</text>
+  <rect class="card" x="20" y="654" width="320" height="44" rx="10" opacity="0.5"/>
+  <rect class="card" x="20" y="706" width="320" height="44" rx="10" opacity="0.5"/>
+</svg>

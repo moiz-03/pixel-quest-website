@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 780" width="360" height="780">
+  <style>
+    .bg    { fill: #0B0F1A; }
+    .card  { fill: #131A33; stroke: #25324F; stroke-width: 1; }
+    .ink   { fill: #FFFFFF; }
+    .muted { fill: #8FA3BF; }
+    .dim   { fill: #5C6E8C; }
+    .mint  { fill: #00E5A0; }
+    .gold  { fill: #FFC542; }
+    .track { fill: #1E2A45; }
+    .t     { font-family: ui-monospace, monospace; }
+    .pt    { font-family: ui-monospace, monospace; letter-spacing: 1px; }
+  </style>
+  <rect class="bg" width="360" height="780"/>
+  <!-- status bar -->
+  <text class="t ink" x="20" y="34" font-size="11">PIXEL QUEST</text>
+  <text class="t dim" x="290" y="34" font-size="10">TUE 21</text>
+  <!-- level card -->
+  <rect class="card" x="20" y="56" width="320" height="108" rx="10"/>
+  <text class="pt mint" x="36" y="86" font-size="10">LEVEL 3</text>
+  <text class="pt muted" x="36" y="108" font-size="9">SQUIRE</text>
+  <rect class="track" x="36" y="122" width="288" height="10" rx="3"/>
+  <rect class="mint" x="36" y="122" width="176" height="10" rx="3"/>
+  <text class="t dim" x="36" y="152" font-size="10">250 / 400 XP</text>
+  <!-- today -->
+  <text class="pt dim" x="20" y="198" font-size="10">TODAY</text>
+  <rect class="card" x="20" y="212" width="320" height="228" rx="10"/>
+  <!-- row 1 -->
+  <rect class="mint" x="36" y="232" width="18" height="18" rx="3"/>
+  <path d="M40 241 l4 4 l7 -8" stroke="#0B0F1A" stroke-width="2.5" fill="none" stroke-linecap="square"/>
+  <text class="t ink" x="66" y="247" font-size="13">Morning run</text>
+  <text class="t gold" x="296" y="247" font-size="11" text-anchor="end">+25</text>
+  <line x1="36" y1="262" x2="324" y2="262" stroke="#25324F"/>
+  <!-- row 2 -->
+  <rect x="36" y="288" width="18" height="18" rx="3" fill="none" stroke="#8FA3BF" stroke-width="1.5"/>
+  <text class="t ink" x="66" y="303" font-size="13">Read 10 pages</text>
+  <text class="t gold" x="296" y="303" font-size="11" text-anchor="end">+15</text>
+  <line x1="36" y1="318" x2="324" y2="318" stroke="#25324F"/>
+  <!-- row 3 -->
+  <rect x="36" y="344" width="18" height="18" rx="3" fill="none" stroke="#8FA3BF" stroke-width="1.5"/>
+  <text class="t ink" x="66" y="359" font-size="13">Drink water</text>
+  <text class="t gold" x="296" y="359" font-size="11" text-anchor="end">+10</text>
+  <line x1="36" y1="374" x2="324" y2="374" stroke="#25324F"/>
+  <!-- row 4 -->
+  <rect x="36" y="400" width="18" height="18" rx="3" fill="none" stroke="#8FA3BF" stroke-width="1.5"/>
+  <text class="t ink" x="66" y="415" font-size="13">Stretch</text>
+  <text class="t gold" x="296" y="415" font-size="11" text-anchor="end">+5</text>
+  <!-- streak banner -->
+  <rect class="card" x="20" y="462" width="320" height="72" rx="10"/>
+  <text class="pt mint" x="36" y="490" font-size="10">STREAK</text>
+  <text class="pt ink" x="36" y="518" font-size="18">12 DAYS</text>
+  <text class="t dim" x="304" y="510" font-size="10" text-anchor="end">BEST 21</text>
+  <!-- bottom nav -->
+  <rect class="card" x="20" y="700" width="320" height="56" rx="10"/>
+  <text class="pt mint" x="60" y="732" font-size="9">TODAY</text>
+  <text class="pt dim" x="130" y="732" font-size="9">STATS</text>
+  <text class="pt dim" x="196" y="732" font-size="9">ADD</text>
+  <text class="pt dim" x="260" y="732" font-size="9">SHOP</text>
+</svg>
