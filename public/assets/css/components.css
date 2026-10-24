@@ -679,9 +679,15 @@
 .footer-copy {
   font-family: var(--font-body);
   font-size: 11px;
-  color: var(--ink-fg2);
+  color: var(--ink-fg2); /* Changed from fg3 to fg2 for contrast */
   border-top: 1px solid var(--ink-3);
   padding-top: var(--space-4);
+}
+
+/* Fixes the "Links rely on color" error */
+.footer-copy a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* --- Banner / notice (download.html fallback) --------------------------- */
