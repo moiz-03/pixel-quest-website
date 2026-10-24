@@ -55,3 +55,14 @@ const openFromHash = () => {
 };
 openFromHash();
 window.addEventListener('hashchange', openFromHash);
+
+// Close open FAQ accordion item on Escape key press
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const openDetails = document.querySelectorAll('.faq-accordion details[open]');
+    openDetails.forEach((detail) => {
+      detail.removeAttribute('open');
+      detail.querySelector('summary')?.focus();
+    });
+  }
+});

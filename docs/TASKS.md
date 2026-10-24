@@ -132,13 +132,11 @@ Prioritized work breakdown. Checkboxes for tracking progress.
 
 - [ ] Add a `tools/build-apk.sh` script to the **app** repo:
   - `flutter build apk --release --split-per-abi`
-  - Copy the `arm64-v8a` build (or universal) to `pixel-quest-web/public/assets/downloads/pixel-quest-vX.Y.Z.apk`
-  - Print `sha256sum` for paste into `download.html`
-- [ ] `download.html` shows the checksum
-- [ ] APK served with `Content-Disposition: attachment`
-- [ ] `.htaccess` / hosting config sets `Content-Type: application/vnd.android.package-archive`
+- [ ] Upload the release build to GitHub Releases (`pixel-quest-website/releases/tag/vX.Y.Z`)
+- [ ] Link to the release asset in `download.html` with verified SHA-256
+- [ ] `download.html` shows the checksum and install guide
 
-**Done when:** `curl -I https://<domain>/assets/downloads/pixel-quest-v1.0.0.apk` shows the correct headers and a 200.
+**Done when:** The GitHub Releases download link resolves with valid headers and binary download.
 
 ---
 

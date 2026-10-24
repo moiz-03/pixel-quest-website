@@ -91,8 +91,8 @@ To distribute the APK outside the Play Store (early access, beta testing, direct
 - Clicking Download navigates to `download.html`.
 - `download.html` shows: file name, version, size, SHA-256 checksum, install steps for Android 8+.
 - APK is served with `Content-Type: application/vnd.android.package-archive` and `Content-Disposition: attachment`.
-- File available at a stable path: `/assets/downloads/pixel-quest-v1.0.0.apk`.
-- If the file is missing, the page shows "Download temporarily unavailable" — never a 404.
+- File available via official GitHub Releases link (e.g. `https://github.com/moiz-03/pixel-quest-website/releases/download/...` to avoid Firebase Spark/free tier bandwidth limits).
+- If the download cannot be reached, the page shows "Download temporarily unavailable".
 
 ---
 
@@ -228,7 +228,7 @@ Summary:
 ## 9. Launch Checklist
 
 - [ ] All 7 HTML pages live and linked
-- [ ] APK present at `/assets/downloads/pixel-quest-v1.0.0.apk`
+- [ ] APK release asset published on GitHub Releases (linked in `download.html`)
 - [ ] `og-preview.png` renders correctly when sharing on X / Slack / Discord
 - [ ] `sitemap.xml` and `robots.txt` in place
 - [ ] `AppUrls.terms` and `AppUrls.privacy` in the **app** point at the site's URLs

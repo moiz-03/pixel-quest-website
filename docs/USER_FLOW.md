@@ -132,7 +132,7 @@ App Launch ──► Splash ──► Check Auth State
 | Footer "Privacy" | `/privacy.html` | Internal |
 | Footer "Terms" | `/terms.html` | Internal |
 | Footer "Changelog" | `/changelog.html` | Internal |
-| `download.html` | `/assets/downloads/pixel-quest-v1.0.0.apk` | Direct Binary Download |
+| `download.html` | GitHub Releases binary (`https://github.com/.../releases/...`) | Direct Binary Download |
 | `features.html` | `/download.html` | Internal CTA |
 | `faq.html` | `/download.html` | Internal CTA |
 | Privacy | `/terms.html` | Internal Link |
