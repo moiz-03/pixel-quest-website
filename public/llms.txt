@@ -1,0 +1,17 @@
+# Pixel Quest
+
+> A retro pixel-art habit tracker for Android. Add quests, earn XP, keep streaks, and climb from Novice to Mythic.
+
+Pixel Quest is a gamified habit tracker. It features offline-first storage, an RPG-style quest system, seven progression tiers, and no tracking.
+
+## Features
+- Quests (Habits)
+- XP & Levels
+- Streaks & Streak Freezes
+- Offline-first sync
+- Local reminders
+
+## Links
+- Homepage: https://pixel-quest-aba36.web.app/
+- Download APK: https://pixel-quest-aba36.web.app/download
+- Source Code: https://github.com/moiz-03/pixel-quest-website
